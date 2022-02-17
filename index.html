@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Image Zoom</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+	</head>
+	<body>
+		<div class="">
+			<div id="product_carousel_dynemic" class="">
+				<img src="hdImage.jpg" data-large-image="hdImage.jpg" alt="Image Zoom" width="1200" class="zoomImage lazy">
+			</div>
+		</div>
+		<script src="jquery-3.6.0.min.js"></script>
+		<script src="image-zoom.js"></script>
+		
+		<style>
+					
+					
+			.cerceve,
+			.cerceve .mouseP {
+				position: absolute;
+				left: 0;
+				top: 0;
+				cursor: crosshair;
+				z-index: 100;
+			}
+
+				.cerceve .mouseP {
+					display: none;
+					border: 1px solid #787878;
+					background: rgba(255,255,255,0.2);
+					z-index: 999;
+					position: relative;
+				}
+
+				.cerceve .image {
+					display: none;
+					position: absolute;
+					left: calc(100% + 20px);
+					height: 100%;
+					width: 100%;
+					top: 0;
+					border: 1px solid #ccc;
+					background-color: #fff;
+					box-shadow: 0px 0px 10px #b7b7b7;
+					border-radius: 2px;
+					z-index: 1;
+				}
+			</style>
+	</body>
+</html>
